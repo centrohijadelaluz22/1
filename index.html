@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centro Hija De La Luz</title>
+
+<style>
+
+/* FUENTES */
+
+  @font-face {
+font-family: 'Cathalia';
+src: url('Cathalia.otf') format('opentype');
+}  
+
+@font-face {
+font-family: 'Cinzel'; 
+src: url('CinzelDecorative-Bold.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'NotoEthiopic';
+src: url('NotoSerifEthiopic-VariableFont_wdth,wght.ttf') format('truetype');
+} 
+
+@font-face {
+font-family: 'Lobster';
+src: url('LobsterTwo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoEthiopic';
+    src: url('NotoSerifEthiopic-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+/* BASE */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.28), rgba(0,0,0,0.28)),
+        url('fondo 1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #f5f7fa;
+    font-family: 'NotoEthiopic', serif;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* IZQUIERDA */
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* TITULO */
+
+h1 {
+    font-family: 'Cinzel';
+    font-size: 52px;
+    margin: 10px 0;
+   color:#800360;
+text-shadow:
+0 0 4px #ff4fb7,
+0 0 10px #d10b84,
+0 0 20px #d10b84,
+0 0 40px #b3076b;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-top: 10px;
+    text-shadow:
+0 0 6px rgba(179,7,107,0.9),
+0 0 18px rgba(179,7,107,0.7),
+0 0 35px rgba(179,7,107,0.5);
+}
+
+.text{
+font-family:'Cathalia';
+font-size:18px;
+margin:0px 0 15px 0;
+color:#800360;
+
+text-shadow:
+0 0 6px rgba(179,7,107,0.9),
+0 0 18px rgba(179,7,107,0.7),
+0 0 35px rgba(179,7,107,0.5);
+}
+/* DERECHA */
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    width: 80%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* BOTONES */
+
+.button {
+    text-align: center;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1.5px solid rgba(255,255,255,0.8);
+    text-decoration: none;
+    color: #f8f9fb;
+    font-size: 18px;
+    backdrop-filter: blur(8px);
+    background: rgba(0,0,0,0.18);
+    transition: 0.3s;
+    text-shadow: 0 0 4px rgba(255,255,255,0.5);
+
+    /* Animación base */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecerSuave 0.8s ease forwards;
+}
+
+/* Retrasos en cascada */
+
+.button:nth-child(1) { animation-delay: 0.3s; }
+.button:nth-child(2) { animation-delay: 0.6s; }
+.button:nth-child(3) { animation-delay: 0.9s; }
+.button:nth-child(4) { animation-delay: 1.2s; }
+.button:nth-child(5) { animation-delay: 1.5s; }
+.button:hover {
+    background: rgba(255,255,255,0.18);
+    box-shadow: 0 0 12px rgba(255,255,255,0.4);
+}
+
+/* KEYFRAMES */
+
+@keyframes aparecerSuave {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+.container {
+    flex-direction: column;
+}
+
+.left, .right {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.buttons {
+    width: 85%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- IZQUIERDA -->
+    <div class="left">
+        <img src="logo.png" class="profile">
+       <div class="subtitle">
+            Centro Holístico
+        </div> 
+      <h1>Hija De La Luz</h1>
+      <div class="title">
+           Recuerda tu Verdadera Esencia
+        </div> 
+        
+    </div>
+
+    <!-- DERECHA -->
+    <div class="right">
+        <div class="buttons">
+
+            <a class="button" href="https://centrohijadelaluz22.github.io/2/" target="_blank">
+                Mi Pagina Web Y Catálogo
+            </a>
+
+            <a class="button" href="https://www.tiktok.com/@hija_de_la_luz22?_r=1&_t=ZS-96YTMix9sDY" target="_blank">
+                TikTok
+            </a>
+
+            <a class="button" href="https://www.instagram.com/centro_hija_de_la_luz?igsh=MWprYzFoODZiNzk1dw==" target="_blank">
+                Instagram | Únete a mi Comunidad
+            </a>
+<a class="button" href=" " >
+    Cursos Y Formaciones
+</a>
+            <a class="button" href="#" onclick="enviarWhatsApp()">
+                WhatsApp | Agenda Aquí
+            </a>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+function enviarWhatsApp(){
+const numero="56949106065";
+const mensaje="Hola, Fabi 💕🫶🏻. Quisiera agendar un servicio";
+const url="https://api.whatsapp.com/send?phone="+numero+"&text="+encodeURIComponent(mensaje);
+window.open(url,"_blank");
+}
+</script>
+
+</body>
+</html>
